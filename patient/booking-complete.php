@@ -52,13 +52,13 @@ if($_POST){
             $mail->isSMTP(); // Utiliser SMTP
             $mail->Host = 'smtp.gmail.com'; // Définir l'hôte du serveur SMTP
             $mail->SMTPAuth = true; // Activer l'authentification SMTP
-            $mail->Username = 'daveglobalbusiness@gmail.com'; // Nom d'utilisateur SMTP (adresse e-mail)
-            $mail->Password = 'klxn bugq lzrv ellz'; // Mot de passe SMTP
+            $mail->Username = ''; // Nom d'utilisateur SMTP (adresse e-mail)
+            $mail->Password = ''; // Mot de passe SMTP
             $mail->SMTPSecure = 'tls'; // Activer le cryptage TLS
             $mail->Port = 587; // Port TCP auquel se connecter
 
             // Destinataires
-            $mail->setFrom('daveglobalbusiness@gmail.com', 'Dave Hospital');
+            $mail->setFrom('adresse mail', 'nom lié à l\'adresse mail');
 
             // Contenu pour le patient
             $mail->addAddress($useremail, $username); // Ajouter le patient comme destinataire
